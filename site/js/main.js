@@ -1686,3 +1686,148 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         });
+		
+		/**
+ * Language selector functionality
+ */
+function initLanguageSelector() {
+  // Language dropdown toggle
+  const langDropdownBtn = document.getElementById('language-dropdown-button');
+  const langDropdownMenu = document.getElementById('language-dropdown-menu');
+  
+  if (langDropdownBtn && langDropdownMenu) {
+    // Toggle dropdown
+    langDropdownBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdownMenu.classList.toggle('show');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.language-dropdown')) {
+        langDropdownMenu.classList.remove('show');
+      }
+    });
+    
+    // Language selection
+    const langOptions = document.querySelectorAll('.language-option');
+    langOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        const lang = this.getAttribute('onclick').replace("changeLanguage('", "").replace("')", "");
+        changeLanguage(lang);
+        langDropdownMenu.classList.remove('show');
+      });
+    });
+  }
+  
+  // Check for saved language preference on load
+  const savedLanguage = localStorage.getItem('preferredLanguage');
+  if (savedLanguage && translations[savedLanguage]) {
+    changeLanguage(savedLanguage);
+  } else {
+    // Detect browser language
+    const browserLanguage = navigator.language.split('-')[0];
+    if (translations[browserLanguage]) {
+      changeLanguage(browserLanguage);
+    }
+  }
+}
+
+/**
+ * Enhanced form validation function
+ */
+function validateForm(form) {
+  const fields = form.querySelectorAll('input, textarea, select');
+  let isValid = true;
+  
+  // Clear previous error states
+  form.querySelectorAll('.form-field').forEach(field => {
+    field.classList.remove('error');
+  });
+  
+  form.querySelectorAll('.error-message').forEach(msg => {
+    msg.classList.add('hidden');
+  });
+  
+  // Validate each field
+  fields.forEach(field => {
+    const fieldType = field.type;
+    const fieldId = field.id;
+    const fieldContainer = field.closest('.form-field');
+    const errorElement = document.getElementById(`${fieldId}-error`);
+    
+    if (!errorElement) return;
+    
+    let fieldValid = true;
+    
+    // Required field validation
+    if (field.hasAttribute('required')) {
+      if (fieldType === 'checkbox' && !field.checked) {
+        fieldValid = false;
+      } else if (fieldType !== 'checkbox' && !field.value.trim()) {
+        fieldValid = false;
+      }
+    }
+    
+    // Email validation
+    if (fieldType === 'email' && field.value.trim()) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(field.value)) {
+        fieldValid = false;
+      }
+    }
+    
+    // Phone validation
+    if (fieldType === 'tel' && field.value.trim()) {
+      const phoneDigits = field.value.replace(/\D/g, '');
+      if (phoneDigits.length < 10) {
+        fieldValid = false;
+      }
+    }
+    
+    // Apply error state if validation failed
+    if (!fieldValid) {
+      if (fieldContainer) fieldContainer.classList.add('error');
+      if (errorElement) errorElement.classList.remove('hidden');
+      isValid = false;
+    }
+  });
+  
+  return isValid;
+}
+/**
+ * Improved smooth scrolling to anchors
+ */
+function initSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        e.preventDefault();
+        
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && mobileMenu.classList.contains('active')) {
+          document.getElementById('mobile-menu-button').click();
+        }
+        
+        // Get header height for offset
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        
+        // Calculate appropriate offset with some additional padding
+        const offset = headerHeight + 20;
+        
+        window.scrollTo({
+          top: targetPosition - offset,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}

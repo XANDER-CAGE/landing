@@ -617,3 +617,53 @@ header a.inline-flex:hover {
 .duration-300 {
     transition-duration: 300ms;
 }
+/* Improved mobile menu styles */
+@media (max-width: 768px) {
+  #mobile-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .language-dropdown {
+    position: static;
+  }
+  
+  #language-dropdown-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-top: 0;
+    border-radius: 0;
+    transform-origin: top center;
+  }
+  
+  .testimonial-card {
+    min-height: 200px;
+  }
+}
+/* Cross-browser compatibility fixes */
+.benefits-card,
+.testimonial-card,
+.form-field input,
+.form-field textarea,
+.form-field select,
+.form-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Fix for Safari border-radius issues */
+@supports (-webkit-overflow-scrolling: touch) {
+  .rounded-full {
+    isolation: isolate;
+  }
+  
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on focus in iOS */
+  }
+}
