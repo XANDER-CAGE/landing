@@ -26,99 +26,99 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 	    <link rel="stylesheet" href="css/style.css">
 	<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Contact form validation
-    const contactForm = document.getElementById('contact-form');
-    
-    if (contactForm) {
-        const contactName = document.getElementById('contact-name');
-        const contactEmail = document.getElementById('contact-email');
-        const contactSubject = document.getElementById('contact-subject');
-        const contactMessage = document.getElementById('contact-message');
-        const contactSuccess = document.getElementById('contact-success');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Contact form validation
+        const contactForm = document.getElementById('contact-form');
         
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+        if (contactForm) {
+            const contactName = document.getElementById('contact-name');
+            const contactEmail = document.getElementById('contact-email');
+            const contactSubject = document.getElementById('contact-subject');
+            const contactMessage = document.getElementById('contact-message');
+            const contactSuccess = document.getElementById('contact-success');
             
-            let isValid = true;
-            
-            // Reset previous errors
-            const formFields = contactForm.querySelectorAll('.form-field');
-            formFields.forEach(field => {
-                field.classList.remove('error');
-            });
-            
-            const errorMessages = contactForm.querySelectorAll('.error-message');
-            errorMessages.forEach(error => {
-                error.classList.add('hidden');
-            });
-            
-            // Validate name
-            if (!contactName.value.trim()) {
-                contactName.closest('.form-field').classList.add('error');
-                document.getElementById('contact-name-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            // Validate email
-            if (!contactEmail.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail.value)) {
-                contactEmail.closest('.form-field').classList.add('error');
-                document.getElementById('contact-email-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            // Validate subject
-            if (!contactSubject.value.trim()) {
-                contactSubject.closest('.form-field').classList.add('error');
-                document.getElementById('contact-subject-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            // Validate message
-            if (!contactMessage.value.trim()) {
-                contactMessage.closest('.form-field').classList.add('error');
-                document.getElementById('contact-message-error').classList.remove('hidden');
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Submit the form using fetch API
-                fetch(contactForm.action, {
-                    method: 'POST',
-                    body: new FormData(contactForm),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    if (response.ok) {
-                        // Show success message
-                        contactSuccess.classList.remove('hidden');
-                        contactForm.reset();
-                        
-                        // Hide success message after 5 seconds
-                        setTimeout(() => {
-                            contactSuccess.classList.add('hidden');
-                        }, 5000);
-                    } else {
-                        response.json().then(data => {
-                            if (Object.hasOwn(data, 'errors')) {
-                                console.error(data["errors"].map(error => error["message"]).join(", "));
-                                alert(data["errors"].map(error => error["message"]).join(", "));
-                            } else {
-                                console.error("Oops! There was a problem submitting your form");
-                                alert("Oops! There was a problem submitting your form");
-                            }
-                        });
-                    }
-                }).catch(error => {
-                    console.error('Error:', error);
-                    alert('There was a problem sending your message. Please try again later.');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Reset previous errors
+                const formFields = contactForm.querySelectorAll('.form-field');
+                formFields.forEach(field => {
+                    field.classList.remove('error');
                 });
-            }
-        });
-    }
-});
-</script>
+                
+                const errorMessages = contactForm.querySelectorAll('.error-message');
+                errorMessages.forEach(error => {
+                    error.classList.add('hidden');
+                });
+                
+                // Validate name
+                if (!contactName.value.trim()) {
+                    contactName.closest('.form-field').classList.add('error');
+                    document.getElementById('contact-name-error').classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate email
+                if (!contactEmail.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail.value)) {
+                    contactEmail.closest('.form-field').classList.add('error');
+                    document.getElementById('contact-email-error').classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate subject
+                if (!contactSubject.value.trim()) {
+                    contactSubject.closest('.form-field').classList.add('error');
+                    document.getElementById('contact-subject-error').classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate message
+                if (!contactMessage.value.trim()) {
+                    contactMessage.closest('.form-field').classList.add('error');
+                    document.getElementById('contact-message-error').classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Submit the form using fetch API
+                    fetch(contactForm.action, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            // Show success message
+                            contactSuccess.classList.remove('hidden');
+                            contactForm.reset();
+                            
+                            // Hide success message after 5 seconds
+                            setTimeout(() => {
+                                contactSuccess.classList.add('hidden');
+                            }, 5000);
+                        } else {
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, 'errors')) {
+                                    console.error(data["errors"].map(error => error["message"]).join(", "));
+                                    alert(data["errors"].map(error => error["message"]).join(", "));
+                                } else {
+                                    console.error("Oops! There was a problem submitting your form");
+                                    alert("Oops! There was a problem submitting your form");
+                                }
+                            });
+                        }
+                    }).catch(error => {
+                        console.error('Error:', error);
+                        alert('There was a problem sending your message. Please try again later.');
+                    });
+                }
+            });
+        }
+    });
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header/Navigation -->
