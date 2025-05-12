@@ -2,17 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<link rel="canonical" href="https://truckingpulse.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="fuel cards, trucking fuel discounts, fuel savings, trucking companies, trucking fuel cards, fuel cards for trucking fleets, fuel savings solutions">
-	<meta name="description" content="TruckingPulse offers premium fuel card solutions for trucking companies. Save up to $0.70 per gallon with discounts at major truck stops like Loves, Petro, and more. Apply now for a fuel card and reduce fuel expenses!">
-	<meta property="og:title" content="TruckingPulse | Fuel Card Solutions for Trucking Companies">
-	<meta property="og:description" content="Save up to $0.70 per gallon with TruckingPulse fuel cards, accepted at major truck stops nationwide. Apply today to start saving!">
-	<meta property="og:image" content="https://truckingpulse.com/images/og-image.jpg">
-	<meta property="og:url" content="https://truckingpulse.com">
-	<meta property="og:type" content="website">
-
-	<title>TruckingPulse | Smart Fuel Solutions for Trucking Companies</title>
+	<meta name="description" content="TruckingPulse offers premium fuel card solutions for trucking companies. Save up to $0.70 per gallon with our nationwide network.">
+    <title>TruckingPulse | Smart Fuel Solutions for Trucking Companies</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,101 +16,90 @@
     
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-	    <link rel="stylesheet" href="css/style.css">
-	<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Contact form validation
-        const contactForm = document.getElementById('contact-form');
-        
-        if (contactForm) {
-            const contactName = document.getElementById('contact-name');
-            const contactEmail = document.getElementById('contact-email');
-            const contactSubject = document.getElementById('contact-subject');
-            const contactMessage = document.getElementById('contact-message');
-            const contactSuccess = document.getElementById('contact-success');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                let isValid = true;
-                
-                // Reset previous errors
-                const formFields = contactForm.querySelectorAll('.form-field');
-                formFields.forEach(field => {
-                    field.classList.remove('error');
-                });
-                
-                const errorMessages = contactForm.querySelectorAll('.error-message');
-                errorMessages.forEach(error => {
-                    error.classList.add('hidden');
-                });
-                
-                // Validate name
-                if (!contactName.value.trim()) {
-                    contactName.closest('.form-field').classList.add('error');
-                    document.getElementById('contact-name-error').classList.remove('hidden');
-                    isValid = false;
-                }
-                
-                // Validate email
-                if (!contactEmail.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail.value)) {
-                    contactEmail.closest('.form-field').classList.add('error');
-                    document.getElementById('contact-email-error').classList.remove('hidden');
-                    isValid = false;
-                }
-                
-                // Validate subject
-                if (!contactSubject.value.trim()) {
-                    contactSubject.closest('.form-field').classList.add('error');
-                    document.getElementById('contact-subject-error').classList.remove('hidden');
-                    isValid = false;
-                }
-                
-                // Validate message
-                if (!contactMessage.value.trim()) {
-                    contactMessage.closest('.form-field').classList.add('error');
-                    document.getElementById('contact-message-error').classList.remove('hidden');
-                    isValid = false;
-                }
-                
-                if (isValid) {
-                    // Submit the form using fetch API
-                    fetch(contactForm.action, {
-                        method: 'POST',
-                        body: new FormData(contactForm),
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    }).then(response => {
-                        if (response.ok) {
-                            // Show success message
-                            contactSuccess.classList.remove('hidden');
-                            contactForm.reset();
-                            
-                            // Hide success message after 5 seconds
-                            setTimeout(() => {
-                                contactSuccess.classList.add('hidden');
-                            }, 5000);
-                        } else {
-                            response.json().then(data => {
-                                if (Object.hasOwn(data, 'errors')) {
-                                    console.error(data["errors"].map(error => error["message"]).join(", "));
-                                    alert(data["errors"].map(error => error["message"]).join(", "));
-                                } else {
-                                    console.error("Oops! There was a problem submitting your form");
-                                    alert("Oops! There was a problem submitting your form");
-                                }
-                            });
-                        }
-                    }).catch(error => {
-                        console.error('Error:', error);
-                        alert('There was a problem sending your message. Please try again later.');
-                    });
-                }
-            });
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
-    });
-    </script>
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .benefits-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefits-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Mobile menu transition */
+        #mobile-menu {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #mobile-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #mobile-menu-button svg {
+            transition: transform 0.3s ease;
+        }
+        
+        #mobile-menu-button svg.rotate-90 {
+            transform: rotate(90deg);
+        }
+        
+        /* Form validation styles */
+        .form-field.error input {
+            border-color: #ef4444;
+        }
+        
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        
+        /* Lazy load images */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+        
+        /* FAQ animation */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-content.active {
+            max-height: 500px;
+        }
+        
+        .faq-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-arrow.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header/Navigation -->
@@ -135,7 +116,8 @@
                         <a href="#savings" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">Savings</a>
                         <a href="#partners" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">Partners</a>
                         <a href="#testimonials" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">Testimonials</a>
-						<a href="#contact-us" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">Contact Us</a>                    </nav>
+                        <a href="#contact" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">Contact</a>
+                    </nav>
                 </div>
                 <div class="flex items-center">
                     <a href="https://cabinet.truckingpulse.com" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-blue-700 hover:bg-blue-800 transition-colors mr-2">
@@ -145,10 +127,6 @@
                         Get Fuel Card
                     </a>
                 </div>
-			
-
-
-
                 <div class="flex items-center md:hidden">
                     <button type="button" aria-label="Toggle menu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="mobile-menu-button">
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -184,20 +162,24 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
                 <div class="mb-12 lg:mb-0">
                     <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-						Fuel Your Fleet and Maximize Savings!
-					</h1>
+                        Power Your Fleet with Premium Fuel Savings
+                    </h1>
                     <p class="mt-6 text-xl text-blue-100 max-w-3xl">
-						Save up to $0.70 per gallon with TruckingPulse fuel cards, accepted at major truck stops nationwide. Maximize savings and fuel efficiency today.
-					</p>
+                        Save up to $0.70 per gallon with the TruckingPulse fuel card, accepted at major truck stops nationwide.
+                    </p>
                     <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                        <a href="#fuel-card" class="px-8 py-3 text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition duration-300 text-center">
-							Apply Now
-						</a>
-
+                        <a href="#fuel-card" class="px-8 py-3 text-base font-medium rounded-full text-white bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-xl transition duration-300 text-center">
+                            Apply Now
+                        </a>
                         <a href="#learn-more" class="px-8 py-3 text-base font-medium rounded-full text-blue-700 bg-white hover:bg-gray-100 shadow transition duration-300 text-center">
-							Learn More
-						</a>
+                            Learn More
+                        </a>
                     </div>
+                </div>
+                <div class="relative">
+                    <img src="images/fuel-card-hero.png" alt="TruckingPulse Fuel Card" class="rounded-xl shadow-2xl relative z-10 w-full lazy-load" loading="eager">
+                    <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-indigo-600 rounded-full opacity-20 blur-xl z-0"></div>
+                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-blue-400 rounded-full opacity-20 blur-xl z-0"></div>
                 </div>
             </div>
         </div>
@@ -509,184 +491,197 @@
     </section>
 
     <!-- FAQ Section -->
-<section id="faq" class="py-16 bg-gray-50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
-            <p class="mt-4 text-lg text-gray-600">Get answers to the most common questions about TruckingPulse fuel cards.</p>
-        </div>
-
-        <div class="space-y-6">
-            <!-- FAQ Item 1 -->
-            <div class="bg-white shadow overflow-hidden rounded-lg">
-                <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-1" aria-expanded="false" aria-controls="faq-1">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-medium text-gray-900">What is the main advantage of your fuel cards?</h3>
-                        <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                </button>
-                <div id="faq-1" class="faq-content px-6 pb-4">
-                    <p class="text-gray-600">
-                        The main advantage of our fuel cards is a weekly credit line of $5,000 that we provide to our cardholders. In addition, we work with the largest stations in America: Love's, TA & PETRO, which together have a network of more than 1,000 gas stations and truck stops throughout the country.
-                    </p>
-                </div>
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Get answers to the most common questions about TruckingPulse fuel cards.
+                </p>
             </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="bg-white shadow overflow-hidden rounded-lg">
-                <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-2" aria-expanded="false" aria-controls="faq-2">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-medium text-gray-900">Does your card cover only fuel costs?</h3>
-                        <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                </button>
-                <div id="faq-2" class="faq-content px-6 pb-4">
-                    <p class="text-gray-600">
-                        No. You can also pay for scaling, reefing and DEF with our card.
-                    </p>
-                </div>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="bg-white shadow overflow-hidden rounded-lg">
-                <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-3" aria-expanded="false" aria-controls="faq-3">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-medium text-gray-900">How much does your fuel card cost?</h3>
-                        <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                </button>
-                <div id="faq-3" class="faq-content px-6 pb-4">
-                    <p class="text-gray-600">
-                        We provide fuel cards for free, which allows small companies and owner-operators to use our services without any upfront cost or annual fees.
-                    </p>
-                </div>
-            </div>
-
-            <!-- FAQ Item 4 -->
-            <div class="bg-white shadow overflow-hidden rounded-lg">
-                <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-4" aria-expanded="false" aria-controls="faq-4">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-medium text-gray-900">Does your card allow me to track fuel consumption?</h3>
-                        <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                </button>
-                <div id="faq-4" class="faq-content px-6 pb-4">
-                    <p class="text-gray-600">
-                        Yes. On our website, each client has their own personal account, where they fully manage the cards (make activations, set limits, receive EFS codes), and can also track fuel prices and expenses, which allows them to effectively plan their budget.
-                    </p>
-                </div>
-            </div>
-
-            <!-- FAQ Item 5 -->
-            <div class="bg-white shadow overflow-hidden rounded-lg">
-                <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-5" aria-expanded="false" aria-controls="faq-5">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-medium text-gray-900">When can I contact your support?</h3>
-                        <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                </button>
-                <div id="faq-5" class="faq-content px-6 pb-4">
-                    <p class="text-gray-600">
-                        Our support is available 24/7. So you can contact us at any time convenient for you.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Contact Form Section -->
-	<section id="contact-us" class="py-16 bg-gradient-to-r from-blue-900 to-blue-500 text-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-white">Contact Us</h2>
-            <p class="mt-4 text-lg text-blue-200">We'd love to hear from you! Drop us a message and we'll get back to you as soon as possible.</p>
-        </div>
-
-        <div class="bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-200 p-8">
-            <form id="contact-form" method="POST" action="https://formspree.io/f/xgvknobz">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Full Name -->
-                    <div class="form-field">
-                        <label for="contact-name" class="block text-sm font-medium text-gray-900">Full Name*</label>
-                        <input type="text" name="name" id="contact-name" class="block w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent shadow-lg transition duration-300" placeholder="John Smith" required>
-                        <div class="error-message hidden" id="contact-name-error">Please enter your full name</div>
-                    </div>
-
-                    <!-- Email Address -->
-                    <div class="form-field">
-                        <label for="contact-email" class="block text-sm font-medium text-gray-900">Email Address*</label>
-                        <input type="email" name="email" id="contact-email" class="block w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent shadow-lg transition duration-300" placeholder="you@example.com" required>
-                        <div class="error-message hidden" id="contact-email-error">Please enter a valid email address</div>
-                    </div>
-
-                    <!-- Phone Number -->
-                    <div class="form-field">
-                        <label for="contact-phone" class="block text-sm font-medium text-gray-900">Phone Number</label>
-                        <input type="tel" name="phone" id="contact-phone" class="block w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent shadow-lg transition duration-300" placeholder="(123) 456-7890">
-                    </div>
-
-                    <!-- Subject -->
-                    <div class="form-field">
-                        <label for="contact-subject" class="block text-sm font-medium text-gray-900">Subject*</label>
-                        <input type="text" name="subject" id="contact-subject" class="block w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent shadow-lg transition duration-300" placeholder="How can we help you?" required>
-                        <div class="error-message hidden" id="contact-subject-error">Please enter a subject</div>
-                    </div>
-
-                    <!-- Message -->
-                    <div class="form-field md:col-span-2">
-                        <label for="contact-message" class="block text-sm font-medium text-gray-900">Message*</label>
-                        <textarea name="message" id="contact-message" rows="4" class="block w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent shadow-lg transition duration-300" placeholder="Your message here..." required></textarea>
-                        <div class="error-message hidden" id="contact-message-error">Please enter your message</div>
-                    </div>
-                </div>
-
-                <div class="mt-6 flex items-center space-x-4">
-                    <input type="checkbox" name="newsletter" id="contact-newsletter" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded transition duration-300">
-                    <label for="contact-newsletter" class="text-sm text-gray-800">Subscribe to our newsletter for fuel saving tips and industry news</label>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="mt-8">
-                    <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 -ml-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                        </svg>
-                        Send Message
-                    </button>
-                </div>
-
-                <!-- Success message (hidden by default) -->
-                <div id="contact-success" class="mt-6 p-4 bg-green-50 text-green-800 rounded-lg shadow border border-green-200 hidden">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <svg class="h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-1" aria-expanded="false" aria-controls="faq-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">What is the main advantage of your fuel cards?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </div>
-                        <div class="ml-3">
-                            <h3 class="text-sm font-medium text-green-800">Message Sent Successfully!</h3>
-                            <div class="mt-2 text-sm text-green-700">
-                                <p>Thank you for reaching out to TruckingPulse. We'll get back to you as soon as possible.</p>
-                            </div>
-                        </div>
+                    </button>
+                    <div id="faq-1" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            The main advantage of our fuel cards is a weekly credit line of $5,000 that we provide to our cardholders. In addition, we work with the largest stations in America: Love's, TA & PETRO, which together have a network of more than 1,000 gas stations and truck stops throughout the country.
+                        </p>
                     </div>
                 </div>
-            </form>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-2" aria-expanded="false" aria-controls="faq-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">Does your card cover only fuel costs?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="faq-2" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            No. You can also pay for scaling, reefing and DEF with our card.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-3" aria-expanded="false" aria-controls="faq-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">How much does your fuel card cost?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="faq-3" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            We provide fuel cards for free, which allows small companies and owner-operators to use our services without any upfront cost or annual fees.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-4" aria-expanded="false" aria-controls="faq-4">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">Does your card allow me to track fuel consumption?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="faq-4" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Yes. On our website, each client has their own personal account, where they fully manage the cards (make activations, set limits, receive EFS codes), and can also track fuel prices and expenses, which allows them to effectively plan their budget.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-5" aria-expanded="false" aria-controls="faq-5">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">When can I contact your support?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="faq-5" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Our support is available 24/7. So you can contact us at any time convenient for you.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 (New) -->
+                <div class="bg-white shadow overflow-hidden rounded-lg">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-6" aria-expanded="false" aria-controls="faq-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-medium text-gray-900">How long does the application process take?</h3>
+                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div id="faq-6" class="faq-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Most applications are processed within 1-2 business days. Once approved, your cards will be shipped and typically arrive within 5-7 business days. For urgent needs, we also offer expedited shipping options.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="fuel-card" class="py-16 bg-gradient-to-br from-blue-800 to-indigo-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold">Apply for Your Fuel Card Today</h2>
+                <p class="mt-4 text-lg text-blue-100">
+                    Join thousands of trucking companies already saving with TruckingPulse. Fill out the form below to get started.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-2xl mx-auto">
+                <div class="px-6 py-8">
+                    <form id="fuel-card-form" novalidate>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-name" class="block text-sm font-medium text-gray-700">Full Name*</label>
+                                <input type="text" name="name" id="email-name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                <div class="error-message hidden" id="name-error">Please enter your full name</div>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
+                                <input type="tel" name="phone" id="email-phone" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required pattern="[0-9]{10,}">
+                                <div class="error-message hidden" id="phone-error">Please enter a valid phone number</div>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-address" class="block text-sm font-medium text-gray-700">Email Address*</label>
+                                <input type="email" name="email" id="email-address" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                <div class="error-message hidden" id="email-error">Please enter a valid email address</div>
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-company" class="block text-sm font-medium text-gray-700">Company Name</label>
+                                <input type="text" name="company" id="email-company" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-id" class="block text-sm font-medium text-gray-700">MC/DOT Number</label>
+                                <input type="text" name="mc-dot" id="email-id" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div class="col-span-2 sm:col-span-1 form-field">
+                                <label for="email-trucks" class="block text-sm font-medium text-gray-700">Number of Trucks</label>
+                                <input type="number" name="trucks" id="email-trucks" min="1" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div class="col-span-2 form-field">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="privacy-policy" name="privacy-policy" type="checkbox" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded" required>
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                        <label for="privacy-policy" class="font-medium text-gray-700">I agree to the <a href="#" class="text-blue-600 hover:underline">privacy policy</a>*</label>
+                                    </div>
+                                </div>
+                                <div class="error-message hidden" id="privacy-error">You must agree to the privacy policy</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <button type="submit" id="email-submit2" class="w-full py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                                Submit Application
+                            </button>
+                        </div>
+                        
+                        <!-- Success message (hidden by default) -->
+                        <div id="form-success" class="mt-4 p-4 bg-green-100 text-green-800 rounded-md hidden">
+                            <p class="font-medium">Thank you for your application!</p>
+                            <p>We will contact you very soon to complete your registration.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact/Footer Section -->
     <footer id="contact" class="bg-gray-900 text-white">
@@ -743,6 +738,10 @@
                             <p class="text-gray-400">Support:</p>
                             <a href="mailto:support@truckingpulse.com" class="text-gray-400 hover:text-white transition-colors">support@truckingpulse.com</a>
                         </li>
+                        <li>
+                            <p class="text-gray-400">Phone:</p>
+                            <a href="tel:+18883567458" class="text-gray-400 hover:text-white transition-colors">+1 (888) 356-7458</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -783,5 +782,197 @@
     <script src="js/main.js"></script>
     
     <!-- Enhanced JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy loading for images
+            const lazyImages = document.querySelectorAll('.lazy-load');
+            
+            function lazyLoad() {
+                lazyImages.forEach(img => {
+                    if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0) {
+                        img.classList.add('loaded');
+                    }
+                });
+            }
+            
+            // Initial check
+            lazyLoad();
+            
+            // Add scroll event listener
+            window.addEventListener('scroll', lazyLoad);
+            window.addEventListener('resize', lazyLoad);
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const menuIcon = this.querySelector('svg');
+                menuIcon.classList.toggle('rotate-90');
+                
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('overflow-hidden');
+                    
+                    // Wait for transition to complete before hiding
+                    setTimeout(() => {
+                        mobileMenu.style.display = 'none';
+                    }, 300);
+                } else {
+                    mobileMenu.style.display = 'block';
+                    
+                    // Force reflow to make the transition work
+                    window.getComputedStyle(mobileMenu).opacity;
+                    
+                    mobileMenu.classList.add('active');
+                    document.body.classList.add('overflow-hidden');
+                }
+            });
+            
+            // FAQ accordions
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const content = document.getElementById(targetId);
+                    const arrow = this.querySelector('.faq-arrow');
+                    
+                    // Toggle aria attributes for accessibility
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    
+                    // Toggle content visibility
+                    if (content.classList.contains('active')) {
+                        content.classList.remove('active');
+                        arrow.classList.remove('rotate');
+                    } else {
+                        content.classList.add('active');
+                        arrow.classList.add('rotate');
+                    }
+                });
+            });
+            
+            // Form validation
+            const form = document.getElementById('fuel-card-form');
+            const nameInput = document.getElementById('email-name');
+            const phoneInput = document.getElementById('email-phone');
+            const emailInput = document.getElementById('email-address');
+            const privacyCheckbox = document.getElementById('privacy-policy');
+            const nameError = document.getElementById('name-error');
+            const phoneError = document.getElementById('phone-error');
+            const emailError = document.getElementById('email-error');
+            const privacyError = document.getElementById('privacy-error');
+            const formSuccess = document.getElementById('form-success');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Reset previous errors
+                [nameInput, phoneInput, emailInput, privacyCheckbox].forEach(field => {
+                    field.closest('.form-field').classList.remove('error');
+                });
+                
+                [nameError, phoneError, emailError, privacyError].forEach(error => {
+                    error.classList.add('hidden');
+                });
+                
+                // Validate name
+                if (!nameInput.value.trim()) {
+                    nameInput.closest('.form-field').classList.add('error');
+                    nameError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate phone
+                if (!phoneInput.value.trim() || !/^[0-9]{10,}$/.test(phoneInput.value.replace(/[^0-9]/g, ''))) {
+                    phoneInput.closest('.form-field').classList.add('error');
+                    phoneError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate email
+                if (!emailInput.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+                    emailInput.closest('.form-field').classList.add('error');
+                    emailError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate privacy policy
+                if (!privacyCheckbox.checked) {
+                    privacyCheckbox.closest('.form-field').classList.add('error');
+                    privacyError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // If using AJAX submission, you'd call that here
+                    // For demo purposes, we'll just show success message
+                    formSuccess.classList.remove('hidden');
+                    form.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formSuccess.classList.add('hidden');
+                    }, 5000);
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (mobileMenu.classList.contains('active')) {
+                            mobileMenuButton.click();
+                        }
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add scroll to top button
+            const scrollTopButton = document.createElement('button');
+            scrollTopButton.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                </svg>
+            `;
+            scrollTopButton.classList.add('fixed', 'bottom-8', 'right-8', 'bg-blue-600', 'text-white', 'p-3', 'rounded-full', 'shadow-lg', 'hover:bg-blue-700', 'focus:outline-none', 'transform', 'transition-transform', 'hover:scale-110', 'z-30', 'hidden');
+            scrollTopButton.setAttribute('aria-label', 'Scroll to top');
+            document.body.appendChild(scrollTopButton);
+            
+            // Show/hide scroll to top button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 500) {
+                    scrollTopButton.classList.remove('hidden');
+                } else {
+                    scrollTopButton.classList.add('hidden');
+                }
+            });
+            
+            // Scroll to top when button is clicked
+            scrollTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
