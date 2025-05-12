@@ -1496,7 +1496,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             // Lazy loading for images
             const lazyImages = document.querySelectorAll('.lazy-load');
             
@@ -1687,7 +1687,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 		
-		/**
+/**
  * Language selector functionality
  */
 function initLanguageSelector() {
@@ -1795,6 +1795,7 @@ function validateForm(form) {
   
   return isValid;
 }
+
 /**
  * Improved smooth scrolling to anchors
  */
@@ -1831,3 +1832,10 @@ function initSmoothScrolling() {
     });
   });
 }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  initLanguageSelector();
+  initSmoothScrolling();
+  
+  // Add any other initialization functions here
+});
