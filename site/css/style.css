@@ -63,3 +63,27 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#mobile-menu {
+	transition: opacity 0.3s ease;
+}
+
+#mobile-menu-button svg {
+	transition: transform 0.3s ease;
+}
+
+#mobile-menu-button svg.rotate-90 {
+	transform: rotate(90deg);
+}
+
+#mobile-menu a {
+	display: block;
+	padding: 15px;
+	border-radius: 8px;
+	margin: 5px 0;
+	transition: all 0.2s ease;
+}
+
+#mobile-menu a:active {
+	transform: scale(0.98);
+}
