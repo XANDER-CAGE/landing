@@ -65,7 +65,16 @@
 /*# sourceMappingURL=style.css.map */
 
 #mobile-menu {
-	transition: opacity 0.3s ease;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#mobile-menu.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 #mobile-menu-button svg {
@@ -86,4 +95,46 @@
 
 #mobile-menu a:active {
 	transform: scale(0.98);
+}
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.4s ease;
+}
+
+.faq-content.active {
+    max-height: 500px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.faq-toggle {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.faq-toggle[aria-expanded="true"] {
+    background-color: #f0f4ff;
+}
+
+.faq-toggle h3 {
+    flex: 1;
+    margin: 0;
+    font-weight: 600;
+}
+
+.faq-toggle .faq-arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle[aria-expanded="true"] .faq-arrow {
+    transform: rotate(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse-button,
+  .icon-pulse::after {
+    animation: none !important;
+  }
 }

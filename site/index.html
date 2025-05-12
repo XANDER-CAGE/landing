@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="TruckingPulse offers premium fuel card solutions for trucking companies. Save up to $0.70 per gallon with our nationwide network.">
-    <title>TruckingPulse | Smart Fuel Solutions for Trucking Companies</title>
-    
+	<meta name="keywords" content="fuel cards for trucking companies, truck fuel discounts, fleet fuel savings, diesel fuel cards, trucking fuel solutions, Love's fuel card, TA Petro fuel discounts">
+	<meta name="description" content="Get up to $0.70 per gallon in fuel savings with TruckingPulse cards. No fees, no contracts. Accepted at Love's, Petro, TA, and 1,000+ truck stops. Apply now!">
+    <title>Fuel Cards for Trucking Companies | Save Up to $0.70/Gal | TruckingPulse</title>
+    <meta property="og:title" content="Fuel Cards for Trucking Companies | Save Up to $0.70/Gal | TruckingPulse">
+	<meta property="og:description" content="Nationwide fuel discounts with no fees. Accepted at 1,000+ truck stops including Love's, Petro, TA. Apply today!">
+	<meta property="og:image" content="https://truckingpulse.com/images/og-image.jpg">
+	<meta property="og:url" content="https://truckingpulse.com">
+	<meta property="og:type" content="website">
+	
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TruckingPulse",
+  "url": "https://truckingpulse.com",
+  "logo": "https://truckingpulse.com/images/logo.png",
+  "description": "Fuel card solutions for trucking companies with discounts up to $0.70 per gallon at 1000+ truck stops across the US.",
+  "sameAs": [
+    "https://www.facebook.com/truckingpulse",
+    "https://www.instagram.com/truckingpulse",
+    "https://www.linkedin.com/company/truckingpulse"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "areaServed": "US",
+      "availableLanguage": ["English"]
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1309 Coffeen Avenue STE 1200",
+    "addressLocality": "Sheridan",
+    "addressRegion": "WY",
+    "postalCode": "82801",
+    "addressCountry": "US"
+  },
+  "department": {
+    "@type": "Organization",
+    "name": "Sales Department",
+    "email": "sales@truckingpulse.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fuel Card Programs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Diesel Fuel Card",
+          "description": "Accepted at Love’s, Petro, TA and more. Offers discounts up to $0.70 per gallon.",
+          "brand": {
+            "@type": "Brand",
+            "name": "TruckingPulse"
+          }
+        }
+      }
+    ]
+  }
+}
+</script>
+
+
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -16,7 +79,6 @@
     
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -100,6 +162,231 @@
             transform: rotate(180deg);
         }
     </style>
+	<style>
+    /* Enhanced hero gradient */
+    .hero-gradient {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Floating circles animation */
+    .floating-circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.2;
+    }
+    
+    .circle-1 {
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.2);
+        top: 10%;
+        left: 10%;
+        animation: float 8s ease-in-out infinite;
+    }
+    
+    .circle-2 {
+        width: 50px;
+        height: 50px;
+        background: rgba(59, 130, 246, 0.4);
+        top: 20%;
+        right: 20%;
+        animation: float 6s ease-in-out infinite;
+        animation-delay: 1s;
+    }
+    
+    .circle-3 {
+        width: 80px;
+        height: 80px;
+        background: rgba(30, 58, 138, 0.3);
+        bottom: 15%;
+        left: 25%;
+        animation: float 7s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+    
+    .circle-4 {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.2);
+        bottom: 10%;
+        right: 10%;
+        animation: float 10s ease-in-out infinite;
+        animation-delay: 0.5s;
+    }
+    
+    .circle-5 {
+        width: 40px;
+        height: 40px;
+        background: rgba(59, 130, 246, 0.4);
+        top: 50%;
+        right: 5%;
+        animation: float 8s ease-in-out infinite;
+        animation-delay: 1.5s;
+    }
+    
+    @keyframes float {
+	  0% {
+		transform: translate(0, 0) scale(1) rotate(0deg);
+	  }
+	  25% {
+		transform: translate(10px, -10px) scale(1.05) rotate(5deg);
+	  }
+	  50% {
+		transform: translate(0, 10px) scale(0.95) rotate(-3deg);
+	  }
+	  75% {
+		transform: translate(-10px, -5px) scale(1.03) rotate(3deg);
+	  }
+	  100% {
+		transform: translate(0, 0) scale(1) rotate(0deg);
+	  }
+	}
+
+    
+    /* Text glow effect */
+    .text-glow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Feature pill animation */
+    .feature-pill {
+        transform: translateX(50px);
+        opacity: 0;
+        animation: slide-in 0.5s forwards ease-out;
+    }
+    
+    @keyframes slide-in {
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    /* Fade in animation */
+    .fade-in {
+        opacity: 0;
+        animation: fade-in 0.8s forwards;
+    }
+    
+    .fade-in-slide {
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fade-in-slide 0.8s forwards;
+    }
+    
+    @keyframes fade-in {
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fade-in-slide {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Button animations */
+    .pulse-button {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        }
+    }
+    
+    .hover-scale {
+        transition: transform 0.3s ease;
+    }
+    
+    .hover-scale:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Icon pulse animation */
+    .icon-pulse {
+        position: relative;
+    }
+    
+    .icon-pulse::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(59, 130, 246, 0.7);
+        border-radius: 50%;
+        z-index: -1;
+        animation: icon-pulse 2s infinite;
+    }
+    
+    @keyframes icon-pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+</style>
+<script>
+  var form = document.getElementById("my-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset();
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form.";
+          }
+        });
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form.";
+    });
+  }
+
+  form.addEventListener("submit", handleSubmit);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header/Navigation -->
@@ -156,34 +443,81 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-                <div class="mb-12 lg:mb-0">
-                    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-                        Power Your Fleet with Premium Fuel Savings
-                    </h1>
-                    <p class="mt-6 text-xl text-blue-100 max-w-3xl">
-                        Save up to $0.70 per gallon with the TruckingPulse fuel card, accepted at major truck stops nationwide.
-                    </p>
-                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                        <a href="#fuel-card" class="px-8 py-3 text-base font-medium rounded-full text-white bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-xl transition duration-300 text-center">
-                            Apply Now
-                        </a>
-                        <a href="#learn-more" class="px-8 py-3 text-base font-medium rounded-full text-blue-700 bg-white hover:bg-gray-100 shadow transition duration-300 text-center">
-                            Learn More
-                        </a>
-                    </div>
+<section class="hero-gradient pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="floating-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Banner-Style Content -->
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Main Text Content -->
+            <div class="md:w-1/2 mb-6 md:mb-0 fade-in-slide">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight text-glow">
+                    Cut Fleet Fuel Costs by Up to $0.70/Gallon  
+                </h1>
+                <p class="mt-3 text-lg text-blue-100 max-w-xl fade-in" style="animation-delay: 0.2s">
+					Get Exclusive Discounts at Love’s, Petro, TA & More — Accepted Nationwide
+                </p>
+                
+                <!-- Call to Action Buttons -->
+                <div class="mt-6 flex flex-wrap gap-4 fade-in" style="animation-delay: 0.4s">
+                    <a href="#fuel-card" class="px-6 py-2 text-base font-medium rounded-full text-white bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-xl transition duration-300 text-center pulse-button">
+                        Apply Now
+                    </a>
+                    <a href="#learn-more" class="px-6 py-2 text-base font-medium rounded-full text-blue-700 bg-white hover:bg-gray-100 shadow transition duration-300 text-center hover-scale">
+                        Learn More
+                    </a>
                 </div>
-                <div class="relative">
-                    <img src="images/fuel-card-hero.png" alt="TruckingPulse Fuel Card" class="rounded-xl shadow-2xl relative z-10 w-full lazy-load" loading="eager">
-                    <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-indigo-600 rounded-full opacity-20 blur-xl z-0"></div>
-                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-blue-400 rounded-full opacity-20 blur-xl z-0"></div>
+            </div>
+            
+            <!-- Feature Pills -->
+            <div class="md:w-1/2 flex flex-col space-y-3">
+                <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.1s">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">Save Up To $0.70 Per Gallon</span>
+                </div>
+                
+                <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.2s">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">No Hidden Fees</span>
+                </div>
+                
+                <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.3s">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">Detailed IFTA Reporting</span>
+                </div>
+                
+                <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.4s">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">$5,000 Weekly Credit Line</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Logos/Partners Section -->
     <section id="partners" class="py-12 bg-white">
@@ -208,217 +542,198 @@
 
     <!-- About/Story Section -->
     <section id="about" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16">
-                <div>
-                    <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
-                        Our Story Begins With Integrity
-                    </h2>
-                    <div class="mt-10 space-y-6 text-lg text-gray-600">
-                        <p>
-                            At TruckingPulse, we uphold the principles of integrity in serving our esteemed clients. Our commitment to transparent and open communication is paramount, and we are dedicated to acting in accordance with industry best practices.
-                        </p>
-                        <p>
-                            In order to achieve success, we firmly believe in our relentless pursuit of improvement across all facets of our operations.
-                        </p>
-                        <p>
-                            Our mission is straightforward: to foster equitable opportunities for small and medium-sized trucking companies in comparison to larger fleets. Our objective is to provide exceptional customer service and deliver optimal cost savings to every client, regardless of fleet size, through the utilization of the TruckingPulse Fuel Card.
-                        </p>
-                        <p>
-                            We are resolute in our commitment to deliver responsive and personalized service that creates a tangible impact. We hold deep regard for our clients, business partners, and colleagues alike.
-                        </p>
-                    </div>
-                </div>
-                <div class="mt-12 lg:mt-0 flex justify-center items-center">
-                    <img src="images/truck.jpg" alt="Truck on road" class="rounded-lg shadow-xl max-h-96 object-cover lazy-load" loading="lazy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+                    Helping Truckers Compete — and Win
+                </h2>
+                <div class="mt-10 space-y-6 text-lg text-gray-600">
+                    <p>
+                        At TruckingPulse, we believe that small and mid-sized trucking companies deserve the same advantages as large fleets. That’s why we created a fuel card program that levels the playing field — with real savings, no hidden fees, and nationwide access.
+                    </p>
+                    <p>
+                        Whether you're running a single truck or managing a growing fleet, our mission is to help you cut costs, simplify operations, and stay competitive. We’re proud to work with over 8,000 drivers and fleet owners who trust us every day to reduce fuel expenses and streamline reporting.
+                    </p>
+                    <p>
+                        We don’t just provide cards — we build partnerships. Our multilingual support team is available 24/7, and our mobile tools give you total control over fuel spend and driver activity from anywhere.
+                    </p>
+                    <p>
+                        Trucking is the backbone of America. We’re here to help you move forward — faster, smarter, and more profitably.
+                    </p>
                 </div>
             </div>
+            <div class="mt-12 lg:mt-0 flex justify-center items-center">
+                <img src="images/truck.jpg" alt="Truck on road" class="rounded-lg shadow-xl max-h-96 object-cover lazy-load" loading="lazy">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Benefits/Features Section -->
     <section id="services" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base font-semibold tracking-wide text-blue-600 uppercase">Benefits</h2>
-                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Everything you need to manage your fleet</p>
-                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">TruckingPulse fuel cards offer exceptional value and convenient management tools for your business.</p>
-            </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-base font-semibold tracking-wide text-blue-600 uppercase">Benefits</h2>
+      <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
+        Why 8,000+ Truckers Choose TruckingPulse
+      </p>
+      <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+        Fuel smarter, manage easier, and grow your business with confidence.
+      </p>
+    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Benefit 1 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">Significant Savings</h3>
-                    <p class="text-gray-600 mb-3">Save up to $0.70 per gallon at major truck stops across the nation with zero transaction fees.</p>
-                    <p class="text-gray-600">Optimize your fuel spend and improve your bottom line with our exclusive nationwide discounts.</p>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">No Hidden Fees</h3>
-                    <p class="text-gray-600 mb-3">$0 transaction, swipe, deposit, monthly, or annual fees for using our fuel cards.</p>
-                    <p class="text-gray-600">Transparent pricing with no surprises, so you can focus on running your business.</p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">Interactive Fuel Finder</h3>
-                    <p class="text-gray-600 mb-3">Use our interactive map to find the best fuel prices around you or along your routes.</p>
-                    <p class="text-gray-600">Plan your trips efficiently and maximize savings by finding the lowest prices.</p>
-                </div>
-
-                <!-- Benefit 4 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">Mobile App Control</h3>
-                    <p class="text-gray-600 mb-3">Manage your fuel cards, track expenses, and view reports from anywhere with our mobile app.</p>
-                    <p class="text-gray-600">Both drivers and account administrators can access the tools they need on the go.</p>
-                </div>
-
-                <!-- Benefit 5 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">Detailed Reporting</h3>
-                    <p class="text-gray-600 mb-3">Get itemized fuel consumption statements focused on IFTA reporting and expense tracking.</p>
-                    <p class="text-gray-600">Simplify your tax reporting and gain insights into your fleet's fuel efficiency.</p>
-                </div>
-
-                <!-- Benefit 6 -->
-                <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">Credit Access</h3>
-                    <p class="text-gray-600 mb-3">Access credit lines and cash-secured account options to manage your cash flow effectively.</p>
-                    <p class="text-gray-600">Flexible payment options to help your business thrive during peak seasons and slower periods.</p>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1" />
+          </svg>
         </div>
-    </section>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">Save Up to $0.70 per Gallon</h3>
+        <p class="text-gray-600 mb-3">Exclusive discounts at Love’s, Petro, TA, and more — no volume limits, no delay.</p>
+        <p class="text-gray-600">Start saving immediately with trusted nationwide partners.</p>
+      </div>
 
-    <!-- Testimonials Section -->
+      <!-- Card 2 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">No Hidden Fees – Ever</h3>
+        <p class="text-gray-600 mb-3">$0 setup, $0 transaction, $0 monthly fees — full transparency.</p>
+        <p class="text-gray-600">Focus on growth, not fine print.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5-3V7l5-3 6 3 6-3v10l-6 3-6-3z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">Real-Time Fuel Finder</h3>
+        <p class="text-gray-600 mb-3">Locate cheapest fuel stops on your route with live map integration.</p>
+        <p class="text-gray-600">Plan smarter, drive further, save more.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">Full Control via Mobile App</h3>
+        <p class="text-gray-600 mb-3">Lock cards, set limits, track fuel usage — all from your phone.</p>
+        <p class="text-gray-600">Real-time control for owners and drivers alike.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">IFTA & Expense Reporting</h3>
+        <p class="text-gray-600 mb-3">Itemized reports tailored for IFTA, tax, and budget analysis.</p>
+        <p class="text-gray-600">Save time and reduce accounting overhead.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="relative bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 benefits-card border border-gray-100">
+        <div class="absolute top-6 right-6 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-gray-900 mb-4">$5,000 Weekly Credit Line</h3>
+        <p class="text-gray-600 mb-3">Instant fuel financing with secured or unsecured terms available.</p>
+        <p class="text-gray-600">Grow your fleet without upfront capital drain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <section id="testimonials" class="py-16 bg-indigo-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base font-semibold tracking-wide text-indigo-200 uppercase">Testimonials</h2>
-                <p class="mt-1 text-4xl font-extrabold sm:text-5xl sm:tracking-tight">What Our Clients Say</p>
-                <p class="max-w-xl mt-5 mx-auto text-xl text-indigo-200">Don't take our word for it - hear from the fleet managers and drivers who use our fuel cards every day.</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-base font-semibold tracking-wide text-indigo-200 uppercase">What Our Clients Say</h2>
+            <p class="mt-1 text-4xl font-extrabold sm:text-5xl sm:tracking-tight">Real Savings, Real Results</p>
+            <p class="max-w-xl mt-5 mx-auto text-xl text-indigo-200">Here’s what fleet owners and operators are saying about TruckingPulse fuel cards.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card p-6 rounded-lg bg-white text-gray-900 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium">Marcus Ellison</h3>
+                        <p class="text-sm text-gray-500">Summit Freight Solutions</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    <strong>“We’re saving over $1,500/month on fuel —</strong> and that’s just the beginning. The 24/7 support and no-fee structure make TruckingPulse a no-brainer for any fleet.”
+                </p>
             </div>
 
-            <div class="owl-carousel" id="sliderTestimonialsFirst">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
-                            <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium">Steven Wilkinson</h3>
-                            <p class="text-indigo-200">Manager at Double Tap Transportation LLC</p>
-                        </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card p-6 rounded-lg bg-white text-gray-900 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                        </svg>
                     </div>
-                    <p class="text-indigo-100">
-                        "Pretty good fleet cards with reasonable savings and 24/7 multilingual customer service. I would highly recommend to get these cards to minimize the fuel costs and to maximize the fleet convenience."
-                    </p>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
-                            <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium">Adi Pavlowsky</h3>
-                            <p class="text-indigo-200">Fleet Manager at Energy Trucking LLC</p>
-                        </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium">Rachel Nguyen</h3>
+                        <p class="text-sm text-gray-500">BlueLine Hauling Co.</p>
                     </div>
-                    <p class="text-indigo-100">
-                        "Everyone I spoke with at TruckingPulse provides excellent customer service, and took the time to answer all of our questions. The fuel savings have made a significant impact on our bottom line."
-                    </p>
                 </div>
-
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
-                            <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium">Emily Walker</h3>
-                            <p class="text-indigo-200">Fleet Specialist at GT Transportation LLC</p>
-                        </div>
-                    </div>
-                    <p class="text-indigo-100">
-                        "Found out about TruckingPulse about 5 months ago and have been working with them ever since. Their cards have made my fuel management way easier - convenient to use, stable discounts, and one of the most professional services I have ever faced!"
-                    </p>
-                </div>
-                
-                <!-- Testimonial 4 (New) -->
-                <div class="testimonial-card p-6 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
-                            <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium">Michael Roberts</h3>
-                            <p class="text-indigo-200">Owner at Roberts Logistics</p>
-                        </div>
-                    </div>
-                    <p class="text-indigo-100">
-                        "As a small fleet owner, I was looking for ways to compete with larger companies. TruckingPulse fuel cards have given us that edge with substantial savings and excellent reporting tools that help us track every penny."
-                    </p>
-                </div>
+                <p class="text-gray-700">
+                    <strong>“Their customer service is unmatched.”</strong> Every question we had was answered, and we’re now saving thousands annually. Highly recommend.
+                </p>
             </div>
-            
-            <!-- Testimonial Navigation -->
-            <div class="flex justify-center mt-8 space-x-4">
-                <button class="sliderTestimonialsNavPrev p-2 rounded-full bg-indigo-700 hover:bg-indigo-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <button class="sliderTestimonialsNavNext p-2 rounded-full bg-indigo-700 hover:bg-indigo-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card p-6 rounded-lg bg-white text-gray-900 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="h-12 w-12 rounded-full bg-indigo-700 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium">Daniel Cortez</h3>
+                        <p class="text-sm text-gray-500">Cortez Regional Transport</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    <strong>“Easy to use, consistent discounts,</strong> and the reporting tools are a game-changer for our accounting team.”
+                </p>
             </div>
         </div>
-    </section>
+
+        <div class="text-center mt-12">
+            <a href="#fuel-card" class="inline-block px-6 py-3 text-base font-semibold text-indigo-800 bg-white rounded-full shadow hover:bg-gray-100 transition">
+                Ready to Join Them? Apply Now
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Map Section -->
 <section id="learn-more" class="py-16 bg-white">
@@ -491,197 +806,149 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
-                <p class="mt-4 text-lg text-gray-600">
-                    Get answers to the most common questions about TruckingPulse fuel cards.
-                </p>
-            </div>
+    
+<section id="faq" class="py-16 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        Get answers to the most common questions about TruckingPulse fuel cards.
+      </p>
+    </div>
 
-            <div class="space-y-6">
-                <!-- FAQ Item 1 -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-1" aria-expanded="false" aria-controls="faq-1">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">What is the main advantage of your fuel cards?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-1" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            The main advantage of our fuel cards is a weekly credit line of $5,000 that we provide to our cardholders. In addition, we work with the largest stations in America: Love's, TA & PETRO, which together have a network of more than 1,000 gas stations and truck stops throughout the country.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-2" aria-expanded="false" aria-controls="faq-2">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">Does your card cover only fuel costs?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-2" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            No. You can also pay for scaling, reefing and DEF with our card.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-3" aria-expanded="false" aria-controls="faq-3">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">How much does your fuel card cost?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-3" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            We provide fuel cards for free, which allows small companies and owner-operators to use our services without any upfront cost or annual fees.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-4" aria-expanded="false" aria-controls="faq-4">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">Does your card allow me to track fuel consumption?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-4" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            Yes. On our website, each client has their own personal account, where they fully manage the cards (make activations, set limits, receive EFS codes), and can also track fuel prices and expenses, which allows them to effectively plan their budget.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 5 -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-5" aria-expanded="false" aria-controls="faq-5">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">When can I contact your support?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-5" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            Our support is available 24/7. So you can contact us at any time convenient for you.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 6 (New) -->
-                <div class="bg-white shadow overflow-hidden rounded-lg">
-                    <button class="w-full text-left px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 faq-toggle" data-target="faq-6" aria-expanded="false" aria-controls="faq-6">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-medium text-gray-900">How long does the application process take?</h3>
-                            <svg class="faq-arrow h-5 w-5 text-gray-500 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div id="faq-6" class="faq-content px-6 pb-4">
-                        <p class="text-gray-600">
-                            Most applications are processed within 1-2 business days. Once approved, your cards will be shipped and typically arrive within 5-7 business days. For urgent needs, we also offer expedited shipping options.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div x-data="{ open: false }" class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+        <button @click="open = !open" class="w-full px-6 py-4 flex items-center justify-between text-left text-gray-900 font-medium focus:outline-none">
+          <span>What is the main advantage of your fuel cards?</span>
+          <svg :class="{ 'transform rotate-180': open }" class="h-5 w-5 text-gray-500 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-gray-600" x-cloak>
+          A $5,000 weekly credit line and nationwide access to over 1,000 stations including Love's, TA & PETRO.
         </div>
-    </section>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div x-data="{ open: false }" class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+        <button @click="open = !open" class="w-full px-6 py-4 flex items-center justify-between text-left text-gray-900 font-medium focus:outline-none">
+          <span>Does your card cover only fuel costs?</span>
+          <svg :class="{ 'transform rotate-180': open }" class="h-5 w-5 text-gray-500 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-gray-600" x-cloak>
+          No. It also covers scaling, reefer fuel, and DEF.
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div x-data="{ open: false }" class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+        <button @click="open = !open" class="w-full px-6 py-4 flex items-center justify-between text-left text-gray-900 font-medium focus:outline-none">
+          <span>How much does your fuel card cost?</span>
+          <svg :class="{ 'transform rotate-180': open }" class="h-5 w-5 text-gray-500 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-gray-600" x-cloak>
+          Our cards are completely free — no setup, transaction, or monthly fees.
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div x-data="{ open: false }" class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+        <button @click="open = !open" class="w-full px-6 py-4 flex items-center justify-between text-left text-gray-900 font-medium focus:outline-none">
+          <span>Can I track fuel usage and limits?</span>
+          <svg :class="{ 'transform rotate-180': open }" class="h-5 w-5 text-gray-500 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-gray-600" x-cloak>
+          Yes, through your personal account on our website or mobile app. Set limits, track usage, and control everything in real time.
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div x-data="{ open: false }" class="border border-gray-200 rounded-lg shadow-sm bg-white overflow-hidden">
+        <button @click="open = !open" class="w-full px-6 py-4 flex items-center justify-between text-left text-gray-900 font-medium focus:outline-none">
+          <span>When is your support available?</span>
+          <svg :class="{ 'transform rotate-180': open }" class="h-5 w-5 text-gray-500 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-gray-600" x-cloak>
+          We’re here for you 24/7/365 — by phone, email, or live chat.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Application Form Section -->
     <section id="fuel-card" class="py-16 bg-gradient-to-br from-blue-800 to-indigo-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold">Apply for Your Fuel Card Today</h2>
-                <p class="mt-4 text-lg text-blue-100">
-                    Join thousands of trucking companies already saving with TruckingPulse. Fill out the form below to get started.
-                </p>
-            </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold">Start Saving on Fuel — Apply in Minutes</h2>
+      <p class="mt-4 text-lg text-blue-100">
+        No fees, no commitment. Get pre-approved today and unlock discounts at 1,000+ truck stops nationwide.
+      </p>
+    </div>
 
-            <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-2xl mx-auto">
-                <div class="px-6 py-8">
-                    <form id="fuel-card-form" novalidate>
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-name" class="block text-sm font-medium text-gray-700">Full Name*</label>
-                                <input type="text" name="name" id="email-name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
-                                <div class="error-message hidden" id="name-error">Please enter your full name</div>
-                            </div>
+    <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-2xl mx-auto">
+      <div class="px-6 py-8">
+        <!-- Begin Formspree Form -->
+        <form id="my-form" action="https://formspree.io/f/xgvknobz" method="POST" class="grid gap-6 sm:grid-cols-2">
+  <div class="form-field col-span-2 sm:col-span-1">
+    <label for="name" class="block text-sm font-medium text-gray-700">Full Name*</label>
+    <input type="text" name="name" id="name" required class="bg-white text-gray-900 mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3 transition">
+  </div>
 
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
-                                <input type="tel" name="phone" id="email-phone" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required pattern="[0-9]{10,}">
-                                <div class="error-message hidden" id="phone-error">Please enter a valid phone number</div>
-                            </div>
+  <div class="form-field col-span-2 sm:col-span-1">
+    <label for="email" class="block text-sm font-medium text-gray-700">Email Address*</label>
+    <input type="email" name="email" id="email" required class="bg-white text-gray-900 mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3 transition">
+  </div>
 
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-address" class="block text-sm font-medium text-gray-700">Email Address*</label>
-                                <input type="email" name="email" id="email-address" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
-                                <div class="error-message hidden" id="email-error">Please enter a valid email address</div>
-                            </div>
+  <div class="form-field col-span-2 sm:col-span-1">
+    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number*</label>
+    <input type="tel" name="phone" id="phone" required pattern="[0-9]{10,}" class="bg-white text-gray-900 mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3 transition">
+  </div>
 
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-company" class="block text-sm font-medium text-gray-700">Company Name</label>
-                                <input type="text" name="company" id="email-company" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                            </div>
+  <div class="form-field col-span-2 sm:col-span-1">
+    <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
+    <input type="text" name="company" id="company" class="bg-white text-gray-900 mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3 transition">
+  </div>
 
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-id" class="block text-sm font-medium text-gray-700">MC/DOT Number</label>
-                                <input type="text" name="mc-dot" id="email-id" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                            </div>
+  <div class="form-field col-span-2">
+    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+    <textarea name="message" id="message" rows="4" class="bg-white text-gray-900 mt-1 block w-full rounded-lg border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3 transition resize-none"></textarea>
+  </div>
 
-                            <div class="col-span-2 sm:col-span-1 form-field">
-                                <label for="email-trucks" class="block text-sm font-medium text-gray-700">Number of Trucks</label>
-                                <input type="number" name="trucks" id="email-trucks" min="1" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                            </div>
+  <div class="form-field flex items-start col-span-2">
+    <input id="privacy-policy" name="privacy-policy" type="checkbox" required class="h-4 w-4 text-blue-600 border-gray-300 rounded mt-1">
+    <label for="privacy-policy" class="ml-2 text-sm text-gray-700">
+      I agree to the <a href="#" class="text-blue-600 hover:underline">privacy policy</a>*
+    </label>
+  </div>
 
-                            <div class="col-span-2 form-field">
-                                <div class="flex items-start">
-                                    <div class="flex items-center h-5">
-                                        <input id="privacy-policy" name="privacy-policy" type="checkbox" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded" required>
-                                    </div>
-                                    <div class="ml-3 text-sm">
-                                        <label for="privacy-policy" class="font-medium text-gray-700">I agree to the <a href="#" class="text-blue-600 hover:underline">privacy policy</a>*</label>
-                                    </div>
-                                </div>
-                                <div class="error-message hidden" id="privacy-error">You must agree to the privacy policy</div>
-                            </div>
-                        </div>
+  <div class="col-span-2">
+    <button type="submit" id="my-form-button" class="w-full py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition">
+      Submit Application
+    </button>
+    <p id="my-form-status" class="text-sm mt-2 text-center text-green-500"></p>
+  </div>
+</form>
 
-                        <div class="mt-8">
-                            <button type="submit" id="email-submit2" class="w-full py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
-                                Submit Application
-                            </button>
-                        </div>
-                        
-                        <!-- Success message (hidden by default) -->
-                        <div id="form-success" class="mt-4 p-4 bg-green-100 text-green-800 rounded-md hidden">
-                            <p class="font-medium">Thank you for your application!</p>
-                            <p>We will contact you very soon to complete your registration.</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
+          <p id="my-form-status" class="text-sm mt-2 text-center text-green-500"></p>
+        </form>
+        <!-- End Formspree Form -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Contact/Footer Section -->
     <footer id="contact" class="bg-gray-900 text-white">
@@ -738,10 +1005,6 @@
                             <p class="text-gray-400">Support:</p>
                             <a href="mailto:support@truckingpulse.com" class="text-gray-400 hover:text-white transition-colors">support@truckingpulse.com</a>
                         </li>
-                        <li>
-                            <p class="text-gray-400">Phone:</p>
-                            <a href="tel:+18883567458" class="text-gray-400 hover:text-white transition-colors">+1 (888) 356-7458</a>
-                        </li>
                     </ul>
                 </div>
 
@@ -749,10 +1012,10 @@
                 <div>
                     <h3 class="text-sm font-bold uppercase tracking-wider">Download Our App</h3>
                     <div class="mt-4 flex flex-col space-y-4">
-                        <a href="https://apps.apple.com/app/truckingpulse-driver/id6470516568" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
                             <img src="images/app-apple.svg" alt="App Store" class="h-10">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=app.truckingpulse" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
                             <img src="images/app-android.svg" alt="Play Store" class="h-10">
                         </a>
                     </div>
@@ -780,7 +1043,15 @@
     
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
-    
+    <script>
+  document.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    document.querySelectorAll('.floating-circles .circle').forEach((el, i) => {
+      el.style.transform = `translateY(${scrollY * 0.02 * (i + 1)}px)`;
+    });
+  });
+</script>
+
     <!-- Enhanced JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
