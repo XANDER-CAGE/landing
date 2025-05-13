@@ -6,20 +6,105 @@
 (function () {
   "use strict";
 
+  // Немедленное скрытие мобильного меню при загрузке скрипта
+  const mobileMenuEarly = document.getElementById('mobile-menu');
+  if (mobileMenuEarly) {
+    mobileMenuEarly.classList.remove('active');
+    mobileMenuEarly.style.display = 'none';
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initCarousels();
-    setupEventListeners();
+    initMobileMenu();
     initForms();
     initParallax();
     initHeaderNavigation();
-
-    // Ensure mobile menu is hidden on load
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenu) {
-      mobileMenu.classList.remove('active');
-      mobileMenu.style.display = 'none';
-    }
+    lazyLoadImages();
+    addScrollToTopButton();
+    enhancedSmoothScroll();
   });
+
+  function initMobileMenu() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (!mobileMenuButton || !mobileMenu) return;
+    
+    // Гарантируем, что меню изначально скрыто
+    mobileMenu.classList.remove('active');
+    mobileMenu.style.display = 'none';
+    
+    // Очищаем существующие обработчики
+    const newMenuButton = mobileMenuButton.cloneNode(true);
+    mobileMenuButton.parentNode.replaceChild(newMenuButton, mobileMenuButton);
+    
+    // Добавляем новый обработчик для кнопки
+    newMenuButton.addEventListener('click', function () {
+      const menuIcon = this.querySelector('svg');
+      
+      if (mobileMenu.classList.contains('active')) {
+        // Закрываем меню
+        menuIcon.classList.remove('rotate-90');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        setTimeout(() => {
+          mobileMenu.style.display = 'none';
+        }, 300);
+      } else {
+        // Открываем меню
+        menuIcon.classList.add('rotate-90');
+        mobileMenu.style.display = 'block';
+        
+        // Форсируем перерасчет для анимации
+        void mobileMenu.offsetWidth;
+        
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+    
+    // Добавляем обработчики для ссылок в меню
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Если это якорная ссылка
+        if (this.getAttribute('href').startsWith('#')) {
+          // Даем немного времени на анимацию закрытия и затем закрываем меню
+          setTimeout(() => {
+            if (mobileMenu.classList.contains('active')) {
+              newMenuButton.click();
+            }
+          }, 50);
+        }
+      });
+    });
+  }
+
+  function enhancedSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+        
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          
+          // Задержка для плавной работы после закрытия меню
+          setTimeout(() => {
+            const headerHeight = document.querySelector('header')?.offsetHeight || 80;
+            const offset = headerHeight + 16; // Дополнительный отступ
+            
+            window.scrollTo({
+              top: target.offsetTop - offset,
+              behavior: 'smooth'
+            });
+          }, 100);
+        }
+      });
+    });
+  }
 
   function initCarousels() {
     if (typeof jQuery !== 'undefined' && jQuery.fn.owlCarousel) {
@@ -46,55 +131,6 @@
         $("#sliderTestimonialsFirst").trigger("prev.owl.carousel");
       });
     }
-  }
-
-  function setupEventListeners() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function () {
-        const menuIcon = this.querySelector('svg');
-        menuIcon.classList.toggle('rotate-90');
-
-        if (mobileMenu.classList.contains('active')) {
-          mobileMenu.classList.remove('active');
-          document.body.classList.remove('overflow-hidden');
-          setTimeout(() => {
-            mobileMenu.style.display = 'none';
-          }, 300);
-        } else {
-          mobileMenu.style.display = 'block';
-          window.getComputedStyle(mobileMenu).opacity;
-          mobileMenu.classList.add('active');
-          document.body.classList.add('overflow-hidden');
-        }
-      });
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (!targetId || targetId === '#') return;
-
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const offset = (document.querySelector('header')?.offsetHeight || 80) + 20;
-          window.scrollTo({
-            top: target.offsetTop - offset,
-            behavior: 'smooth'
-          });
-
-          if (mobileMenu?.classList.contains('active')) {
-            mobileMenuButton.click();
-          }
-        }
-      });
-    });
-
-    addScrollToTopButton();
-    lazyLoadImages();
   }
 
   function initForms() {
@@ -210,10 +246,12 @@
     setActive();
     window.addEventListener('scroll', setActive);
 
-    // Sticky header
+    // Улучшенная работа со sticky header
     let lastScrollTop = 0;
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Прячем header только когда скролл вниз и мы уже прокрутили больше высоты header
       if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
         header.style.transform = `translateY(-${header.offsetHeight}px)`;
       } else {
@@ -223,4 +261,59 @@
     });
     header.style.transition = 'transform 0.3s ease';
   }
+
+  // Создает CSS стили для улучшения мобильной версии
+  function createMobileStyles() {
+    const styleElement = document.createElement('style');
+    styleElement.textContent = `
+      @media (max-width: 768px) {
+        /* Улучшение для мобильного меню */
+        #mobile-menu {
+          display: none;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          z-index: 50;
+        }
+        
+        #mobile-menu.active {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+        
+        /* Улучшения для плавающих элементов */
+        .floating-circles .circle {
+          transform: scale(0.7);
+        }
+        
+        /* Улучшенное расстояние между элементами */
+        .benefits-card {
+          margin-bottom: 1.5rem;
+        }
+        
+        /* Улучшения для кнопок */
+        .pulse-button, .hover-scale {
+          width: 100%;
+          margin-bottom: 0.75rem;
+        }
+        
+        /* Улучшения для hero-секции */
+        .hero-gradient {
+          padding-top: 6rem;
+          padding-bottom: 3rem;
+        }
+        
+        /* Улучшения для feature pills */
+        .feature-pill {
+          max-width: 100%;
+          margin-bottom: 0.5rem;
+        }
+      }
+    `;
+    document.head.appendChild(styleElement);
+  }
+
+  // Запускаем создание мобильных стилей
+  createMobileStyles();
 })();

@@ -102,25 +102,6 @@
             background-color: rgba(255, 255, 255, 0.05);
         }
 
-        /* Mobile menu transition */
-        #mobile-menu {
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        #mobile-menu.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        #mobile-menu-button svg {
-            transition: transform 0.3s ease;
-        }
-        
-        #mobile-menu-button svg.rotate-90 {
-            transform: rotate(90deg);
-        }
         
         /* Form validation styles */
         .form-field.error input {
@@ -386,6 +367,16 @@
 
   form.addEventListener("submit", handleSubmit);
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu) {
+      mobileMenu.classList.remove('active');
+      mobileMenu.style.display = 'none';
+      mobileMenu.classList.add('hidden');
+    }
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -425,7 +416,7 @@
         </div>
         
         <!-- Mobile menu -->
-        <div class="md:hidden bg-white border-b border-gray-200" id="mobile-menu">
+		<div class="md:hidden bg-white border-b border-gray-200 hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 transition-colors">About</a>
                 <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-50 transition-colors">Services</a>
