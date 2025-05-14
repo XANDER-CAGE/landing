@@ -1,0 +1,21 @@
+# TruckingPulse robots.txt
+User-agent: *
+Allow: /
+
+# Prevent access to admin pages if they exist
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cpanel/
+Disallow: /admin-panel/
+
+# Allow main pages to be indexed
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://truckingpulse.com/sitemap.xml
+
+# Crawl-delay directive for crawlers
+Crawl-delay: 5 

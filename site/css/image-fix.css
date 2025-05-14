@@ -1,0 +1,16 @@
+.lazy-load {                            
+    opacity: 1 !important;
+}                                       
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+} 

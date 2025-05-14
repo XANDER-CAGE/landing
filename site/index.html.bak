@@ -2,28 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <meta name="description" content="Save up to $0.70 per gallon with TruckingPulse fuel cards. No monthly fees, zero hidden costs. Accepted at 1,000+ truck stops including Love's, Petro, TA. Apply in 2 minutes!">
-    <meta name="keywords" content="fuel cards for trucking companies, truck fuel discounts, fleet fuel savings, diesel fuel cards, trucking fuel solutions, Love's fuel card, TA Petro fuel discounts, no monthly fee fuel card, best fuel card for truckers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get up to $0.70 per gallon in fuel savings with TruckingPulse cards. No fees, no contracts. Accepted at Love's, Petro, TA, and 1,000+ truck stops. Apply now!">
+    <meta name="keywords" content="fuel cards for trucking companies, truck fuel discounts, fleet fuel savings, diesel fuel cards, trucking fuel solutions, Love's fuel card, TA Petro fuel discounts, fuel card">
     
-    <title>Best Fuel Cards for Trucking Companies | Save $0.70/Gal | TruckingPulse</title>
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://truckingpulse.com" />
-    
-    <!-- Additional meta tags for better SEO -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="TruckingPulse">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+    <title>Fuel Cards for Trucking Companies | Save Up to $0.70/Gal | TruckingPulse</title>
     
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Best Fuel Cards for Trucking Companies | Save $0.70/Gal | TruckingPulse">
-    <meta property="og:description" content="Nationwide fuel discounts with no fees. Save up to $0.70/gallon at 1,000+ truck stops including Love's, Petro, TA. Apply today!">
+    <meta property="og:title" content="Fuel Cards for Trucking Companies | Save Up to $0.70/Gal | TruckingPulse">
+    <meta property="og:description" content="Nationwide fuel discounts with no fees. Accepted at 1,000+ truck stops including Love's, Petro, TA. Apply today!">
     <meta property="og:image" content="https://truckingpulse.com/images/og-image.jpg">
     <meta property="og:url" content="https://truckingpulse.com">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="TruckingPulse Fuel Cards">
     
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">
@@ -43,9 +33,8 @@
         {
           "@type": "ContactPoint",
           "contactType": "customer support",
-          "telephone": "+1-800-555-1234",
           "areaServed": "US",
-          "availableLanguage": ["English", "Spanish"]
+          "availableLanguage": ["English"]
         }
       ],
       "address": {
@@ -81,65 +70,6 @@
       }
     }
     </script>
-    
-    <!-- Product Schema для лучшего ранжирования в поиске -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "TruckingPulse Fuel Card",
-      "image": "https://truckingpulse.com/images/fuel-card.jpg",
-      "description": "Premium fuel card for trucking companies with savings up to $0.70 per gallon at 1,000+ locations nationwide.",
-      "brand": {
-        "@type": "Brand",
-        "name": "TruckingPulse"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://truckingpulse.com/#fuel-card",
-        "priceCurrency": "USD",
-        "price": "0.00",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "827"
-      }
-    }
-    </script>
-    
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How much can I save with a TruckingPulse fuel card?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "TruckingPulse fuel cards save you up to $0.70 per gallon at over 1,000 truck stops nationwide, including major chains like Love's, Petro, and TA."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Are there any monthly fees for TruckingPulse fuel cards?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We have zero monthly fees, zero annual fees, and zero hidden costs. You only pay for the fuel you purchase. Unlike many competing fuel cards that charge monthly maintenance fees, transaction fees, or annual membership costs, TruckingPulse believes in transparent pricing."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to apply for a TruckingPulse fuel card?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our application process takes just 2 minutes to complete. Most applications are approved within 24 hours, and you can receive your fuel cards within 3-5 business days."
-        }
-      }]
-    }
-    </script>
 
     <!-- Preload critical assets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -157,130 +87,288 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/image-fix.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/banner-animations.css">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <!-- Structured Data - Local Business -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "TruckingPulse Fuel Card Solutions",
-      "image": "https://truckingpulse.com/images/logo.png",
-      "url": "https://truckingpulse.com",
-      "telephone": "+1-800-555-1234",
-      "priceRange": "$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1309 Coffeen Avenue STE 1200",
-        "addressLocality": "Sheridan",
-        "addressRegion": "WY",
-        "postalCode": "82801",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 44.7971,
-        "longitude": -106.9479
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
+    <!-- Base Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; 
         }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/truckingpulse",
-        "https://www.linkedin.com/company/truckingpulse",
-        "https://twitter.com/truckingpulse"
-      ],
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "description": "TruckingPulse provides fuel card solutions for trucking companies with savings up to $0.70 per gallon at over 1,000 truck stops nationwide.",
-      "keywords": "fuel cards, trucking companies, diesel discounts, fleet fuel cards, IFTA reporting, fuel savings, Love's, TA, Petro, truck stops",
-      "disambiguatingDescription": "Premium fuel card provider for trucking companies with nationwide acceptance and significant diesel discounts",
-      "knowsLanguage": ["en", "es"],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Fuel Card Options",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Fleet Fuel Card",
-              "description": "Corporate fuel cards for fleets with multiple trucks and drivers."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Owner-Operator Fuel Card",
-              "description": "Specialized fuel card for independent owner-operators."
-            }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefits-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefits-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Form validation styles */
+        .form-field.error input {
+            border-color: #ef4444;
+        }
+        
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        
+        /* Lazy load images */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+        
+        /* FAQ animation */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-content.active {
+            max-height: 500px;
+        }
+        
+        .faq-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-arrow.rotate {
+            transform: rotate(180deg);
+        }
+        
+        /* Animation styles */
+        .floating-circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+        
+        .circle-1 {
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            top: 10%;
+            left: 10%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .circle-2 {
+            width: 50px;
+            height: 50px;
+            background: rgba(59, 130, 246, 0.4);
+            top: 20%;
+            right: 20%;
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        
+        .circle-3 {
+            width: 80px;
+            height: 80px;
+            background: rgba(30, 58, 138, 0.3);
+            bottom: 15%;
+            left: 25%;
+            animation: float 7s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+        
+        .circle-4 {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            bottom: 10%;
+            right: 10%;
+            animation: float 10s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+        
+        .circle-5 {
+            width: 40px;
+            height: 40px;
+            background: rgba(59, 130, 246, 0.4);
+            top: 50%;
+            right: 5%;
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes float {
+          0% {
+            transform: translate(0, 0) scale(1) rotate(0deg);
           }
-        ]
-      }
-    }
-    </script>
-    
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#1e40af">
-    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#1e40af">
+          25% {
+            transform: translate(10px, -10px) scale(1.05) rotate(5deg);
+          }
+          50% {
+            transform: translate(0, 10px) scale(0.95) rotate(-3deg);
+          }
+          75% {
+            transform: translate(-10px, -5px) scale(1.03) rotate(3deg);
+          }
+          100% {
+            transform: translate(0, 0) scale(1) rotate(0deg);
+          }
+        }
+        
+        /* Text glow effect */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Feature pill animation */
+        .feature-pill {
+            transform: translateX(50px);
+            opacity: 0;
+            animation: slide-in 0.5s forwards ease-out;
+        }
+        
+        @keyframes slide-in {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Fade in animation */
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 0.8s forwards;
+        }
+        
+        .fade-in-slide {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fade-in-slide 0.8s forwards;
+        }
+        
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade-in-slide {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Button animations */
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Icon pulse animation */
+        .icon-pulse {
+            position: relative;
+        }
+        
+        .icon-pulse::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(59, 130, 246, 0.7);
+            border-radius: 50%;
+            z-index: -1;
+            animation: icon-pulse 2s infinite;
+        }
+        
+        @keyframes icon-pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Mobile menu animation */
+        #mobile-menu {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        #mobile-menu.active {
+            opacity: 1;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-gradient {
+                padding-top: 6rem;
+            }
+            
+            .feature-pill {
+                margin-bottom: 0.75rem;
+            }
+            
+            .benefits-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 p-4">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0 pr-4">
-                    <h3 class="text-lg font-medium text-gray-900">We use cookies</h3>
-                    <p class="text-gray-600 text-sm mt-1">
-                        We use cookies to improve your experience on our website, analyze site traffic, and personalize content.
-                        By clicking "Accept", you agree to our use of cookies.
-                    </p>
-                </div>
-                <div class="flex space-x-3">
-                    <button id="decline-cookies" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Decline
-                    </button>
-                    <button id="accept-cookies" class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Accept
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Header/Navigation -->
     <header class="bg-white shadow-sm fixed w-full z-50 transition-transform duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -344,239 +432,143 @@
         </div>
     </header>
 
-    <!-- Bold Geometric Hero Banner -->
-    <section class="relative bg-slate-900 pt-28 pb-20 overflow-hidden" id="hero" itemscope itemtype="https://schema.org/Service">
-        <!-- Geometric background elements -->
-        <div class="absolute inset-0 z-0">
-            <svg class="absolute h-full w-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M0 0L1440 0L1440 800L0 560L0 0Z" fill="url(#paint0_linear)" />
-                <defs>
-                    <linearGradient id="paint0_linear" x1="720" y1="0" x2="720" y2="800" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#0F172A" />
-                        <stop offset="1" stop-color="#1E293B" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <div class="absolute right-0 top-0 w-full h-full overflow-hidden opacity-10">
-                <div class="highway-animation"></div>
-            </div>
-            <!-- Diagonal lines -->
-            <div class="absolute inset-0 flex justify-end items-center opacity-20">
-                <div class="diagonal-lines"></div>
-            </div>
+    <!-- Optimized Hero Section -->
+    <section class="hero-gradient pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="floating-circles" aria-hidden="true">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
         </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Left column - Main content -->
-                <div class="flex flex-col justify-center">
-                    <div class="industry-badge text-xs uppercase tracking-widest font-semibold text-amber-400 mb-6 flex items-center">
-                        <span class="hidden md:inline-block w-12 h-px bg-amber-400 mr-4"></span>
-                        FUEL SOLUTIONS FOR THE TRUCKING INDUSTRY
-                    </div>
-                    
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 reveal-text" itemprop="name">
-                        <span class="sr-only">Best Fuel Cards for Trucking Companies - </span>
-                        Drive <span class="relative inline-block">
-                            <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Further</span>
-                            <span class="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-amber-400 to-orange-500 opacity-30"></span>
-                        </span><br class="hidden md:block"> 
-                        Pay <span class="relative inline-block">
-                            <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Less</span>
-                            <span class="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-amber-400 to-orange-500 opacity-30"></span>
-                        </span>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Text Content -->
+                <div class="md:w-1/2 mb-6 md:mb-0 fade-in-slide">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight text-glow">
+                        Cut Fleet Fuel Costs by Up to $0.70/Gallon  
                     </h1>
-                    
-                    <p class="text-slate-300 text-xl mb-8 md:pr-12 slide-in" itemprop="description">
-                        The smart fuel card that helps trucking companies <span class="font-semibold">save up to $0.70 per gallon</span> at North America's largest network of truck stops.
+                    <p class="mt-3 text-lg text-blue-100 max-w-xl fade-in" style="animation-delay: 0.2s">
+                        Get Exclusive Discounts at Love's, Petro, TA & More — Accepted Nationwide
                     </p>
                     
-                    <!-- Stats row -->
-                    <div class="grid grid-cols-3 gap-4 mb-8 stats-row">
-                        <div class="stat-block" itemscope itemtype="https://schema.org/Offer">
-                            <div class="text-amber-400 text-3xl md:text-4xl font-bold" itemprop="price">$0.70</div>
-                            <div class="text-slate-400 text-sm" itemprop="name">Savings Per Gallon</div>
-                            <meta itemprop="priceCurrency" content="USD">
-                        </div>
-                        <div class="stat-block">
-                            <div class="text-amber-400 text-3xl md:text-4xl font-bold">1,000+</div>
-                            <div class="text-slate-400 text-sm">Locations</div>
-                        </div>
-                        <div class="stat-block">
-                            <div class="text-amber-400 text-3xl md:text-4xl font-bold">$0</div>
-                            <div class="text-slate-400 text-sm">Hidden Fees</div>
-                        </div>
-                    </div>
-                    
-                    <!-- CTAs -->
-                    <div class="flex flex-wrap gap-4 cta-container">
-                        <a href="#fuel-card" class="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-lg transform transition hover:scale-105 hover:shadow-lg flex items-center cta-primary" itemprop="url">
-                            <span>Apply Now</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
+                    <!-- Call to Action Buttons -->
+                    <div class="mt-6 flex flex-wrap gap-4 fade-in" style="animation-delay: 0.4s">
+                        <a href="#fuel-card" class="px-6 py-2 text-base font-medium rounded-full text-white bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-xl transition duration-300 text-center pulse-button">
+                            Apply Now
                         </a>
-                        <a href="#calculator" class="px-8 py-4 border border-slate-600 text-slate-300 font-semibold rounded-lg hover:bg-slate-800 hover:border-slate-500 transition cta-secondary">
-                            Calculate Savings
+                        <a href="#learn-more" class="px-6 py-2 text-base font-medium rounded-full text-blue-700 bg-white hover:bg-gray-100 shadow transition duration-300 text-center hover-scale">
+                            Learn More
                         </a>
                     </div>
                 </div>
                 
-                <!-- Right column - Visual element -->
-                <div class="flex items-center justify-center perspective-element">
-                    <div class="relative card-3d max-w-md w-full">
-                        <!-- Main visual - Fuel Card & Road -->
-                        <div class="border border-slate-700 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-slate-800 to-slate-900 p-6 card-content">
-                            <!-- Stylized card graphic -->
-                            <div class="mb-8 card-graphic">
-                                <div class="flex justify-between items-start mb-6">
-                                    <div>
-                                        <div class="text-amber-400 font-bold text-xl tracking-tight">TruckingPulse</div>
-                                        <div class="text-slate-400 text-sm">FLEET ADVANTAGE</div>
-                                    </div>
-                                    <div class="h-10 w-14 bg-gradient-to-r from-orange-400 to-amber-500 rounded-md flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="border-t border-slate-700 pt-4">
-                                    <div class="flex space-x-4">
-                                        <div class="w-12 h-8 bg-gradient-to-br from-slate-700 to-slate-800 rounded"></div>
-                                        <div class="flex-1">
-                                            <div class="h-2 bg-slate-700 rounded-full w-full mb-2"></div>
-                                            <div class="h-2 bg-slate-700 rounded-full w-3/4"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Road map visualization -->
-                            <div class="bg-slate-950 rounded-lg p-4 mb-6 road-map">
-                                <div class="text-slate-400 text-sm mb-2">Cost Comparison</div>
-                                <div class="flex items-center mb-4">
-                                    <div class="w-1/2 pr-2">
-                                        <div class="text-xs text-slate-500 mb-1">Regular Price</div>
-                                        <div class="h-6 bg-slate-700 rounded-full relative overflow-hidden">
-                                            <div class="h-full w-full bg-slate-600 rounded-full"></div>
-                                            <div class="absolute inset-0 flex items-center justify-center text-xs text-white font-semibold">$4.70/gal</div>
-                                        </div>
-                                    </div>
-                                    <div class="w-1/2 pl-2">
-                                        <div class="text-xs text-slate-500 mb-1">TruckingPulse Price</div>
-                                        <div class="h-6 bg-slate-700 rounded-full relative overflow-hidden">
-                                            <div class="h-full w-5/6 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full pulse-animation"></div>
-                                            <div class="absolute inset-0 flex items-center justify-center text-xs text-white font-semibold">$4.00/gal</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="text-center text-sm text-amber-400 font-semibold">
-                                    Save $3,500+ per truck annually
-                                </div>
-                            </div>
-                            
-                            <!-- Partner logos -->
-                            <div class="bg-white rounded-lg p-4">
-                                <div class="text-center text-xs text-slate-600 font-medium mb-3">
-                                    Accepted at America's top truck stops:
-                                </div>
-                                <div class="grid grid-cols-4 gap-2 items-center">
-                                     <img src="images/station-1.png" alt="Love's Travel Stops - Nationwide Truck Stops Partner" class="h-6 w-auto object-contain mx-auto" loading="lazy" width="90" height="24">
-                                     <img src="images/station-2.png" alt="Petro Stopping Centers - Premium Truck Stop Network" class="h-6 w-auto object-contain mx-auto" loading="lazy" width="90" height="24">
-                                     <img src="images/station-3.png" alt="TA Travel Centers of America - Quality Truck Stops" class="h-6 w-auto object-contain mx-auto" loading="lazy" width="90" height="24">
-                                     <img src="images/station-4.png" alt="Additional Fuel Network Partners - 1,000+ Locations" class="h-6 w-auto object-contain mx-auto" loading="lazy" width="90" height="24">
-                                </div>
-                            </div>
+                <!-- Key Benefits -->
+                <div class="md:w-1/2 flex flex-col space-y-3">
+                    <!-- Benefit 1 -->
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.1s">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v8"></path>
+                                <path d="m4.93 10.93 1.41 1.41"></path>
+                                <path d="M2 18h2"></path>
+                                <path d="M20 18h2"></path>
+                                <path d="m19.07 10.93-1.41 1.41"></path>
+                                <path d="M22 22H2"></path>
+                                <path d="M8 18v4"></path>
+                                <path d="M16 18v4"></path>
+                                <path d="M12 10v10"></path>
+                            </svg>
                         </div>
+                        <span class="text-white font-medium">Save Up To $0.70 Per Gallon</span>
+                    </div>
+                    
+                    <!-- Benefit 2 -->
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.2s">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <span class="text-white font-medium">No Hidden Fees</span>
+                    </div>
+                    
+                    <!-- Benefit 3 -->
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.3s">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <span class="text-white font-medium">Detailed IFTA Reporting</span>
+                    </div>
+                    
+                    <!-- Benefit 4 -->
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-full py-2 px-4 backdrop-blur-sm feature-pill" style="animation-delay: 0.4s">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 flex-shrink-0 icon-pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                        </div>
+                        <span class="text-white font-medium">$5,000 Weekly Credit Line</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Optimized Partners Section -->
-    <section id="partners" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900">Nationwide Truck Stop Partners</h2>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Save at 1,000+ truck stops across North America</p>
-            </div>
-            
-            <div class="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4" itemscope itemtype="https://schema.org/ItemList">
-                <meta itemprop="itemListOrder" content="Unordered" />
-                <meta itemprop="numberOfItems" content="4" />
-                
-                <div class="col-span-1 flex justify-center items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <meta itemprop="position" content="1" />
-                    <div itemprop="item" itemscope itemtype="https://schema.org/Organization">
-                        <meta itemprop="name" content="Love's Travel Stops" />
-                        <meta itemprop="url" content="https://www.loves.com/" />
-                        <img 
-                            src="images/station-1.png" 
-                            alt="Love's Travel Stops - Premium truck stop partner offering fuel discounts up to $0.70/gallon with TruckingPulse" 
-                            class="max-h-16" 
-                            loading="lazy" 
-                            width="160" 
-                            height="64"
-                            fetchpriority="high"
-                            itemprop="image">
-                    </div>
-                </div>
-                <div class="col-span-1 flex justify-center items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <meta itemprop="position" content="2" />
-                    <div itemprop="item" itemscope itemtype="https://schema.org/Organization">
-                        <meta itemprop="name" content="Petro Stopping Centers" />
-                        <meta itemprop="url" content="https://www.ta-petro.com/" />
-                        <img 
-                            src="images/station-2.png" 
-                            alt="Petro Stopping Centers - Full-service truck stops with TruckingPulse fuel savings nationwide" 
-                            class="max-h-16" 
-                            loading="lazy" 
-                            width="160" 
-                            height="64"
-                            itemprop="image">
-                    </div>
-                </div>
-                <div class="col-span-1 flex justify-center items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <meta itemprop="position" content="3" />
-                    <div itemprop="item" itemscope itemtype="https://schema.org/Organization">
-                        <meta itemprop="name" content="TA Travel Centers" />
-                        <meta itemprop="url" content="https://www.ta-petro.com/" />
-                        <img 
-                            src="images/station-3.png" 
-                            alt="TA Travel Centers - Quality truck stops with exclusive TruckingPulse member discounts" 
-                            class="max-h-16" 
-                            loading="lazy" 
-                            width="160" 
-                            height="64"
-                            itemprop="image">
-                    </div>
-                </div>
-                <div class="col-span-1 flex justify-center items-center" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <meta itemprop="position" content="4" />
-                    <div itemprop="item" itemscope itemtype="https://schema.org/Organization">
-                        <meta itemprop="name" content="Independent Truck Stops Network" />
-                        <meta itemprop="url" content="https://truckingpulse.com/partners" />
-                        <img 
-                            src="images/station-4.png" 
-                            alt="Independent Truck Stops Network - Additional 900+ locations with TruckingPulse fuel card acceptance" 
-                            class="max-h-16" 
-                            loading="lazy" 
-                            width="160" 
-                            height="64"
-                            itemprop="image">
-                    </div>
-                </div>
-            </div>
 
-            <div class="mt-10 text-center">
-                <p class="text-lg text-gray-600">Fuel up confidently with nationwide acceptance at all major truck stops and many independent locations.</p>
-                
-                <div class="mt-8">
-                    <a href="#fuel-card" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-amber-600 hover:bg-amber-700 transition duration-150 ease-in-out">
-                        Apply for Your Fuel Card
-                    </a>
+    <!-- Optimized Partners Section -->
+    <section id="partners" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-3xl font-bold text-gray-900 mb-12">Accepted at Major Truck Stops</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                <div class="h-16 flex items-center justify-center">
+                    <img 
+                        src="images/station-1.png" 
+                        alt="Love's Travel Stops" 
+                        class="h-12 object-contain lazy-load" 
+                        loading="lazy"
+                        width="150"
+                        height="48"
+                    >
+                </div>
+                <div class="h-16 flex items-center justify-center">
+                    <img 
+                        src="images/station-2.png" 
+                        alt="Petro Stopping Centers" 
+                        class="h-12 object-contain lazy-load" 
+                        loading="lazy"
+                        width="150"
+                        height="48"
+                    >
+                </div>
+                <div class="h-16 flex items-center justify-center">
+                    <img 
+                        src="images/station-3.png" 
+                        alt="TA Travel Centers" 
+                        class="h-12 object-contain lazy-load" 
+                        loading="lazy"
+                        width="150"
+                        height="48"
+                    >
+                </div>
+                <div class="h-16 flex items-center justify-center">
+                    <img 
+                        src="images/station-4.png" 
+                        alt="Partner Logo" 
+                        class="h-12 object-contain lazy-load" 
+                        loading="lazy"
+                        width="150"
+                        height="48"
+                    >
                 </div>
             </div>
         </div>
@@ -811,7 +803,10 @@
                 <!-- Innovative Solutions -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-lightbulb h-8 w-8 text-blue-600 mr-3"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 0 1 10 10v1a10 10 0 0 1-10 10 10 0 0 1-10-10v-1a10 10 0 0 1 10-10z" />
+                        </svg>
                         <h3 class="text-xl font-medium text-gray-900">Innovative Solutions</h3>
                     </div>
                     <p class="text-gray-600">Our fuel cards integrate with modern fleet management systems, providing you with full transparency and control.</p>
@@ -820,7 +815,10 @@
                 <!-- Mobile Applications -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-mobile-alt h-8 w-8 text-blue-600 mr-3"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 0 1 10 10v1a10 10 0 0 1-10 10 10 0 0 1-10-10v-1a10 10 0 0 1 10-10z" />
+                        </svg>
                         <h3 class="text-xl font-medium text-gray-900">Mobile Applications</h3>
                     </div>
                     <p class="text-gray-600">Manage fuel expenses and track driver activity with our user-friendly mobile application.</p>
@@ -829,7 +827,10 @@
                 <!-- Analytics and Reporting -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-chart-bar h-8 w-8 text-blue-600 mr-3"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 0 1 10 10v1a10 10 0 0 1-10 10 10 0 0 1-10-10v-1a10 10 0 0 1 10-10z" />
+                        </svg>
                         <h3 class="text-xl font-medium text-gray-900">Analytics and Reporting</h3>
                     </div>
                     <p class="text-gray-600">Receive detailed reports and real-time analytics to make informed decisions.</p>
@@ -883,96 +884,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- SEO-оптимизированные FAQ для поисковиков -->
-    <section id="faq-section" class="py-16 bg-gray-50">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Frequently Asked Questions About TruckingPulse Fuel Cards
-          </h2>
-          <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Get answers to common questions about our fuel card services for trucking companies and owner-operators.
-          </p>
-        </div>
-
-        <div class="space-y-8" itemscope itemtype="https://schema.org/FAQPage">
-          <!-- Question 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="text-xl font-semibold text-gray-900" itemprop="name">How much can I save with a TruckingPulse fuel card?</h3>
-            <div class="mt-4 text-gray-600" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
-                <p>TruckingPulse fuel cards save you up to <strong>$0.70 per gallon</strong> at over 1,000 truck stops nationwide, including major chains like Love's, Petro, and TA. For a typical owner-operator using 1,000 gallons per month, this can result in savings of approximately $700 each month or <strong>$8,400 annually</strong>.</p>
-                <p class="mt-2">Our network also includes many independent truck stops that offer competitive pricing, giving you flexibility in finding the best fuel deals across your routes.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="text-xl font-semibold text-gray-900" itemprop="name">Are there any monthly fees for TruckingPulse fuel cards?</h3>
-            <div class="mt-4 text-gray-600" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
-                <p><strong>No</strong>. We have zero monthly fees, zero annual fees, and zero hidden costs. You only pay for the fuel you purchase. Unlike many competing fuel cards that charge monthly maintenance fees, transaction fees, or annual membership costs, TruckingPulse believes in transparent pricing.</p>
-                <p class="mt-2">Our business model focuses on building long-term relationships with trucking companies by providing genuine value through fuel discounts rather than charging administrative fees.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 3 -->
-          <div class="bg-white rounded-lg shadow-md p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="text-xl font-semibold text-gray-900" itemprop="name">How long does it take to apply for a TruckingPulse fuel card?</h3>
-            <div class="mt-4 text-gray-600" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
-                <p>Our application process takes just <strong>2 minutes</strong> to complete. Most applications are approved within 24 hours, and you can receive your fuel cards within 3-5 business days.</p>
-                <p class="mt-2">The online application requires basic company information and can be completed entirely online. We've simplified the process to get you saving on fuel costs as quickly as possible.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 4 -->
-          <div class="bg-white rounded-lg shadow-md p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="text-xl font-semibold text-gray-900" itemprop="name">How does TruckingPulse compare to other fuel cards like Fuelman or TCS?</h3>
-            <div class="mt-4 text-gray-600" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
-                <p>TruckingPulse offers <strong>higher average discounts</strong> than most competitors, with savings up to $0.70 per gallon compared to the industry average of $0.08-$0.44. We also have:</p>
-                <ul class="list-disc pl-5 mt-2 space-y-1">
-                  <li>No monthly fees (unlike many competitors)</li>
-                  <li>A larger network of 1,000+ discount locations</li>
-                  <li>Automatic IFTA reporting included at no extra cost</li>
-                  <li>Superior 24/7 customer service with dedicated account managers</li>
-                  <li>Comprehensive fleet management tools and mobile app</li>
-                </ul>
-                <p class="mt-2">Our focus is exclusively on serving the trucking industry, allowing us to negotiate deeper discounts and provide more specialized services.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 5 -->
-          <div class="bg-white rounded-lg shadow-md p-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 class="text-xl font-semibold text-gray-900" itemprop="name">What information do I need to apply for a TruckingPulse fuel card?</h3>
-            <div class="mt-4 text-gray-600" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
-                <p>To apply for a TruckingPulse fuel card, you'll need:</p>
-                <ul class="list-disc pl-5 mt-2 space-y-1">
-                  <li>Company name and business contact information</li>
-                  <li>Number of trucks in your fleet</li>
-                  <li>Estimated monthly fuel volume</li>
-                  <li>Basic business information (years in operation, MC/DOT number)</li>
-                </ul>
-                <p class="mt-2">The application is streamlined and can be completed online in about 2 minutes. We've made it simple and straightforward to help you start saving on fuel costs immediately.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center">
-          <a href="#fuel-card" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
-            Apply for Your Fuel Card
-          </a>
-        </div>
-      </div>
     </section>
 
     <!-- Optimized FAQ Section -->
@@ -1234,21 +1145,27 @@
                   <label for="privacy-policy" class="font-medium text-gray-700">
                     I agree to the <a href="PrivacyPolicy.pdf" target="_blank" class="text-blue-600 hover:underline">privacy policy</a>*
                   </label>
-                  <div class="error-message hidden" id="privacy-error">You must agree to the privacy policy</div>
-                </div>
-              </div>
-
-              <div class="col-span-2">
-                <button type="submit" id="my-form-button" class="w-full py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition">
-                  Submit Application
-                </button>
-                <p id="my-form-status" class="text-sm mt-2 text-center text-green-500"></p>
-              </div>
-            </form>
+          <div class="form-field flex items-start col-span-2">
+            <input id="privacy-policy" name="privacy-policy" type="checkbox" required
+                   aria-required="true"
+                   class="h-4 w-4 text-blue-600 border-gray-300 rounded mt-1">
+            <label for="privacy-policy" class="ml-2 text-sm text-gray-700">
+              I agree to the <a href="PrivacyPolicy.pdf" target="_blank" class="text-blue-600 hover:underline">privacy policy</a>*
+            </label>
+            <div class="error-message hidden" id="privacy-error">You must agree to the privacy policy</div>
           </div>
-        </div>
+
+          <div class="col-span-2">
+            <button type="submit" id="my-form-button" class="w-full py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition">
+              Submit Application
+            </button>
+            <p id="my-form-status" class="text-sm mt-2 text-center text-green-500"></p>
+          </div>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Contact/Footer Section -->
     <footer id="contact" class="bg-gray-900 text-white">
@@ -1318,6 +1235,16 @@
                                 <a href="mailto:support@truckingpulse.com" class="text-gray-400 hover:text-white transition-colors">support@truckingpulse.com</a>
                             </div>
                         </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-gray-400">Address:</p>
+                                <p class="text-gray-400">1309 Coffeen Avenue STE 1200, Sheridan, WY 82801</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -1342,7 +1269,7 @@
                 <div class="mt-4 md:mt-0 flex space-x-6">
                     <a href="TermsConditions.pdf" target="_blank" class="text-gray-400 hover:text-white transition-colors">Terms</a>
                     <a href="PrivacyPolicy.pdf" target="_blank" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
-                    <a href="#" id="open-cookie-policy" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
                 </div>
             </div>
         </div>
@@ -1352,44 +1279,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/form-handler.js"></script>
-    <script src="js/cookie-consent.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Cookie Policy Modal -->
-    <div id="cookie-policy-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-90vh overflow-y-auto">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-gray-900">Cookie Policy</h2>
-                    <button id="close-cookie-policy" class="text-gray-400 hover:text-gray-500">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="prose max-w-none">
-                    <h3>What Are Cookies</h3>
-                    <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to the website owners.</p>
-                    
-                    <h3>How We Use Cookies</h3>
-                    <p>TruckingPulse uses cookies for several purposes:</p>
-                    <ul>
-                        <li><strong>Essential cookies:</strong> These are necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas of the website.</li>
-                        <li><strong>Functionality cookies:</strong> These are used to recognize you when you return to our website. They enable us to personalize our content for you and remember your preferences.</li>
-                        <li><strong>Analytics cookies:</strong> These help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve our website.</li>
-                    </ul>
-                    
-                    <h3>Managing Cookies</h3>
-                    <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
-                    
-                    <h3>Your Consent</h3>
-                    <p>By using our website, you consent to our use of cookies in accordance with this Cookie Policy. If you do not agree, you can choose to disable cookies in your browser settings. However, please note that disabling certain cookies may affect the functionality of our website.</p>
-                </div>
-                <div class="mt-6 flex justify-end">
-                    <button id="close-cookie-modal-btn" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
